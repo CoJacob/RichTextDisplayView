@@ -14,4 +14,4 @@ A lightweight coreText view for the iOS platform
 
 # Preview
 
-![img]()
+![img](https://github.com/Winerywine/RichTextDisplayView/blob/master/coretext_record.gif)
