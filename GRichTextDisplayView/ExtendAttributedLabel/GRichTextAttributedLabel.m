@@ -831,10 +831,9 @@ static dispatch_queue_t get_rt_attributed_label_parse_queue() \
                             
                             //CTRun的X坐标
                             CGFloat runOrgX = lineOrigin.x + CTLineGetOffsetForStringIndex(line, CTRunGetStringRange(run).location, NULL);
-                            runRect = CGRectMake(runOrgX,lineOrigin.y-runDescent,runRect.size.width,runAscent+runDescent );
-                            NSLog(@"%@",NSStringFromCGRect(runRect));
+                            runRect = CGRectMake(runOrgX,lineOrigin.y-runDescent,runRect.size.width,runAscent+runDescent);
                             
-                            self.moreButton.frame = CGRectMake(rect.size.width-CGRectGetWidth(self.moreButton.frame), rect.size.height-runRect.size.height-(self.lineSpacing/2.0), CGRectGetWidth(self.moreButton.frame), runRect.size.height);
+                            self.moreButton.frame = CGRectMake(rect.size.width-CGRectGetWidth(self.moreButton.frame),runRect.origin.y - runAscent/2.0 + runDescent, CGRectGetWidth(self.moreButton.frame), runRect.size.height);
                             [self.moreButton setHidden:!self.isRetractStatus];
                         }
                     }

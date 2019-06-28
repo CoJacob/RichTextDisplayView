@@ -28,8 +28,8 @@
     // italic斜体
     [self.richTextAttributedLabel addCustomItalicForRange:NSMakeRange(0, 12)];
     // href超链接
-    [self.richTextAttributedLabel addCustomLink:@"https://baidu.com" forRange:NSMakeRange(13, 8) linkColor:[UIColor cg_getColor:@"1478f0"]];
-    [self.richTextAttributedLabel addCustomLink:@"https://apple.com" forRange:NSMakeRange(80, 10) linkColor:[UIColor cg_getColor:@"E62E4D"]];
+    [self.richTextAttributedLabel addCustomLink:@"https://baidu.com" forRange:NSMakeRange(13, 8)];
+    [self.richTextAttributedLabel addCustomLink:@"https://apple.com" forRange:NSMakeRange(80, 10)];
     
     //字体背景色
     [self.richTextAttributedLabel addCustomTextFillColor:[UIColor cg_getColor:@"E62E4D"] forRange:NSMakeRange(25, 50)];

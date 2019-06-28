@@ -88,12 +88,9 @@
 }
 
 - (void) _setUp {
-    
     [self.richTextDisplayView displayContentWithHtmlText:self.htmlText];
-    CGRect rect = self.richTextDisplayView.frame;
-    rect.size.height = self.richTextDisplayView.isRetractStatus ? self.foldTextHeight : self.unfoldTextHeight;
-    self.richTextDisplayView.frame = rect;
     if (!self.richTextDisplayView.isRetractStatus) {
+//        self.foldTextHeight = CGRectGetHeight(self.richTextDisplayView.frame);
         CGRect rect = self.shinkButton.frame;
         rect.origin.y = CGRectGetMaxY(self.richTextDisplayView.frame);
         self.shinkButton.frame = rect;
