@@ -14,6 +14,7 @@
 @property (nonatomic, strong)   UIFont    *richTextFont;        // 字体
 @property (nonatomic, assign)   NSInteger retractNumberOfLine;  // 展开/收起的行数
 @property (nonatomic, assign)   BOOL      isRetractStatus;      // 是否为收起状态
+@property (nonatomic, assign)   BOOL      enableFoldAndExpand;  // 是否允许展开后再收起
 @property (nonatomic, assign)   BOOL      hiddenExpandText;     // 隐藏'展开'字符
 @property (nonatomic, assign)   BOOL      enableImgSeamlessSititching; // 是否支持图片无缝拼接
 @property (nonatomic, copy)     void(^retratHandle)(void);
@@ -32,6 +33,9 @@
  @return richTextViewFrameHeight
  */
 - (CGFloat )contentHeight;
+
+// 收起
+- (void)triggerFold;
 
 
 @end

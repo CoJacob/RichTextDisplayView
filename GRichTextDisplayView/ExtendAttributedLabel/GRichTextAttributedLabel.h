@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)           BOOL     enableRetract;                 // 是否允许展开/收起
 @property (nonatomic, assign)           BOOL     isRetractStatus;               // 是否为收起状态
 @property (nonatomic, assign)           BOOL      hiddenExpandText;             // 隐藏'展开字符'
-
+@property (nonatomic, assign)           BOOL      enableFoldAndExpand;
 
 //添加文本
 - (void)appendText:(NSString *)text;

@@ -14,6 +14,8 @@
 #import "GRichTextDisplayViewLayout.h"
 #import "GRichHtmlTextParser.h"
 
+#import "UIImageView+QNWeb.h"
+
 @interface GRichTextDisplayView () <RichTextAttributedLabelDelegate>
 
 @property (nonatomic, assign) CGFloat                  textFontSize;        // 字体大小
@@ -59,6 +61,18 @@
     _hiddenExpandText = hiddenExpandText;
     self.attributedLabel.hiddenExpandText = _hiddenExpandText;
 }
+
+- (void)setEnableFoldAndExpand:(BOOL)enableFoldAndExpand {
+    _enableFoldAndExpand = enableFoldAndExpand;
+    self.attributedLabel.enableFoldAndExpand = enableFoldAndExpand;
+}
+
+- (void)triggerFold {
+    if (self.enableFoldAndExpand && !self.attributedLabel.isRetractStatus) {
+        [self.attributedLabel triggerFold];
+    }
+}
+
 
 #pragma mark  - Getter
 
@@ -214,7 +228,7 @@
         imageView.frame = CGRectMake(0, self.attributedLabel.frame.size.height, imageItem.width, imageItem.height);
     }
     CGFloat _originFrameY = CGRectGetMaxY(self.attributedLabel.frame);
-    UIImage *placeholderImage = [[UIImage imageNamed:@"xuangubao_w"] drawRectImageWithBorderColor:[UIColor blackColor] size:CGSizeMake(imageItem.width, imageItem.height)];
+    UIImage *placeholderImage = [[UIImage imageNamed:@"wscn_w"] drawRectImageWithBorderColor:[UIColor blackColor] size:CGSizeMake(imageItem.width, imageItem.height)];
     UIImage *attachementImage = placeholderImage;
     imageView.imageUrl = imageItem.src;
     
@@ -228,7 +242,7 @@
             imageView.frame = CGRectMake(0, _originFrameY, imageItem.width, _targetHeight);
         }
     }
-//    [imageView qn_setClipSizedImageWithUrl:imageItem.src placeholder:placeholderImage];
+    [imageView qn_setClipSizedImageWithUrl:imageItem.src placeholder:placeholderImage];
     [self addSubview:imageView];
 }
 

@@ -106,8 +106,8 @@
                      attributedLabel: (GRichTextAttributedLabel *)label
                                width: (CGFloat )width {
     GRichImageItem *imageItem = [[GRichImageItem alloc] initWithContent:imgDict width:width];
-    UIImage *placeHolderImage = [UIImage imageNamed:@"xuangubao_w"];
-    UIImage *attachementImage = [placeHolderImage drawRectImageWithBorderColor:[UIColor whiteColor] size:CGSizeMake(imageItem.width, imageItem.height)];
+    UIImage *placeHolderImage = [UIImage imageNamed:@"wscn_w"];
+    UIImage *attachementImage = [placeHolderImage drawRectImageWithBorderColor:[UIColor blackColor] size:CGSizeMake(imageItem.width, imageItem.height)];
     [label appendImage:attachementImage maxSize:CGSizeMake(width, imageItem.height)];
 }
 

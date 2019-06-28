@@ -31,7 +31,7 @@
 
 - (GRichTextDisplayView *)richTextDisplayView {
     if (!_richTextDisplayView) {
-        _richTextDisplayView = [[GRichTextDisplayView alloc] initWithFrame:CGRectMake(16, 16, CGRectGetWidth(self.scrollView.frame), 0)];
+        _richTextDisplayView = [[GRichTextDisplayView alloc] initWithFrame:CGRectMake(16, 16, CGRectGetWidth(self.scrollView.frame) - 32, 0)];
         _richTextDisplayView.richTextFont = [UIFont systemFontOfSize:15.f];
     }
     return _richTextDisplayView;
@@ -41,10 +41,11 @@
     if (!_richTextAttributedLabel) {
         _richTextAttributedLabel = [[GRichTextAttributedLabel alloc] initWithFrame:CGRectMake(16, 16, CGRectGetWidth(self.scrollView.frame) - 32.f, 0)];
         _richTextAttributedLabel.font = [UIFont systemFontOfSize:15.f];
-        _richTextAttributedLabel.lineSpacing = 2.f;
+        _richTextAttributedLabel.lineSpacing = 3.f;
         _richTextAttributedLabel.textColor = [UIColor cg_getColor:@"333333"];
     }
     return _richTextAttributedLabel;
 }
+
 
 @end

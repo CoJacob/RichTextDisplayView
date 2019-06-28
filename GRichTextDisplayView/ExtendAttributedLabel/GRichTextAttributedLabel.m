@@ -101,6 +101,7 @@ static dispatch_queue_t get_rt_attributed_label_parse_queue() \
         _moreButton.frame = CGRectZero;
         [_moreButton setTitleColor:[UIColor colorWithRed:(20/255.f) green:(130/255.f) blue:(240/255.f) alpha:1] forState:UIControlStateNormal];
         [_moreButton setTitle:@"展开" forState:UIControlStateNormal];
+        _moreButton.titleLabel.font = [UIFont systemFontOfSize:15.f];
         _moreButton.hidden = YES;
         [_moreButton addTarget:self
                         action:@selector(moreAction:)
@@ -156,8 +157,8 @@ static dispatch_queue_t get_rt_attributed_label_parse_queue() \
             attachment.fontAscent = _fontAscent;
             attachment.fontDescent = _fontDescent;
         }
-        [self resetTextFrame];
         self.moreButton.titleLabel.font = font;
+        [self resetTextFrame];
     }
 }
 

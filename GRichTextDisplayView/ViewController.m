@@ -26,8 +26,14 @@
 }
 
 - (void) _setUp {
-    self.dataSource = [NSMutableArray arrayWithArray:@[@"简单富文本"]];
-    self.demoVCClassArray = [NSMutableArray arrayWithArray:@[@"GSimpleRichTextViewController"]];
+    self.dataSource = [NSMutableArray arrayWithArray:@[@"简单富文本(可缓存高度)",
+                                                       @"图文混排",
+                                                       @"Html标签解析显示",
+                                                       @"富文本(支持展开收起、屏幕旋转)"]];
+    self.demoVCClassArray = [NSMutableArray arrayWithArray:@[@"GSimpleRichTextViewController",
+                                                             @"GCoreTextViewController",
+                                                             @"GHtmlTextViewController",
+                                                             @"GComplexHtmlTextViewController"]];
     [self.tableView reloadData];
 }
 
