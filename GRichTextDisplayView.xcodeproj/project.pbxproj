@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64321E4B22C5BA4500A1FB73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E4A22C5BA4500A1FB73 /* AppDelegate.m */; };
+		64321E4E22C5BA4500A1FB73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E4D22C5BA4500A1FB73 /* ViewController.m */; };
+		64321E5122C5BA4500A1FB73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64321E4F22C5BA4500A1FB73 /* Main.storyboard */; };
+		64321E5322C5BA4600A1FB73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64321E5222C5BA4600A1FB73 /* Assets.xcassets */; };
+		64321E5622C5BA4600A1FB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64321E5422C5BA4600A1FB73 /* LaunchScreen.storyboard */; };
+		64321E5922C5BA4600A1FB73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E5822C5BA4600A1FB73 /* main.m */; };
+		64321E6322C5BA4600A1FB73 /* GRichTextDisplayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E6222C5BA4600A1FB73 /* GRichTextDisplayViewTests.m */; };
+		64321E6E22C5BA4600A1FB73 /* GRichTextDisplayViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E6D22C5BA4600A1FB73 /* GRichTextDisplayViewUITests.m */; };
+		64321E9422C5BAA000A1FB73 /* GRichImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E7C22C5BAA000A1FB73 /* GRichImageView.m */; };
+		64321E9522C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8222C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.m */; };
+		64321E9622C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8522C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.m */; };
+		64321E9722C5BAA000A1FB73 /* GRichTextAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8722C5BAA000A1FB73 /* GRichTextAttributedLabel.m */; };
+		64321E9822C5BAA000A1FB73 /* NSMutableAttributedString+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8822C5BAA000A1FB73 /* NSMutableAttributedString+RichText.m */; };
+		64321E9922C5BAA000A1FB73 /* GRichImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8A22C5BAA000A1FB73 /* GRichImageItem.m */; };
+		64321E9A22C5BAA000A1FB73 /* GRichTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8D22C5BAA000A1FB73 /* GRichTextItem.m */; };
+		64321E9B22C5BAA000A1FB73 /* GRichTextDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8E22C5BAA000A1FB73 /* GRichTextDisplayView.m */; };
+		64321E9C22C5BAA000A1FB73 /* GRichTextAttributedTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E8F22C5BAA000A1FB73 /* GRichTextAttributedTextLayout.m */; };
+		64321E9D22C5BAA000A1FB73 /* GRichTextDisplayViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E9122C5BAA000A1FB73 /* GRichTextDisplayViewLayout.m */; };
+		64321E9E22C5BAA000A1FB73 /* GRichTextAttributedLabelURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321E9222C5BAA000A1FB73 /* GRichTextAttributedLabelURL.m */; };
+		64321EA422C5BB3A00A1FB73 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321EA022C5BB3A00A1FB73 /* HTMLParser.m */; };
+		64321EA522C5BB3A00A1FB73 /* GRichHtmlTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321EA122C5BB3A00A1FB73 /* GRichHtmlTextParser.m */; };
+		64321EAF22C5BC6300A1FB73 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321EA822C5BC6300A1FB73 /* TFHpple.m */; };
+		64321EB022C5BC6300A1FB73 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321EAC22C5BC6300A1FB73 /* TFHppleElement.m */; };
+		64321EB122C5BC6300A1FB73 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321EAD22C5BC6300A1FB73 /* XPathQuery.m */; };
+		64321EB522C5BCA000A1FB73 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EB422C5BCA000A1FB73 /* libxml2.tbd */; };
+		64321EB722C5BCC300A1FB73 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EB622C5BCC300A1FB73 /* libicucore.tbd */; };
+		64321EB922C5BCCD00A1FB73 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EB822C5BCCD00A1FB73 /* libresolv.9.tbd */; };
+		64321EBB22C5BCD400A1FB73 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EBA22C5BCD400A1FB73 /* libz.1.2.5.tbd */; };
+		64321EBD22C5BCDB00A1FB73 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EBC22C5BCDB00A1FB73 /* libsqlite3.tbd */; };
+		64321EBF22C5BCEE00A1FB73 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EBE22C5BCEE00A1FB73 /* libc++.tbd */; };
+		64321EC122C5BD5F00A1FB73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EC022C5BD5E00A1FB73 /* UIKit.framework */; };
+		64321EC322C5BD6400A1FB73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EC222C5BD6300A1FB73 /* Foundation.framework */; };
+		64321EC522C5BFA300A1FB73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EC422C5BFA300A1FB73 /* CoreGraphics.framework */; };
+		64321EC722C5BFE700A1FB73 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64321EC622C5BFE600A1FB73 /* CoreText.framework */; };
+		64321ECF22C5DD0F00A1FB73 /* UIImage+GScaleZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321ECE22C5DD0F00A1FB73 /* UIImage+GScaleZoom.m */; };
+		64321ED222C5DFD100A1FB73 /* UIColor+CGExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321ED122C5DFD100A1FB73 /* UIColor+CGExtend.m */; };
+		64321ED622C5E45F00A1FB73 /* BaseDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321ED522C5E45F00A1FB73 /* BaseDemoViewController.m */; };
+		64321ED922C5E47B00A1FB73 /* GSimpleRichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64321ED822C5E47B00A1FB73 /* GSimpleRichTextViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64321E5F22C5BA4600A1FB73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64321E3E22C5BA4400A1FB73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64321E4522C5BA4500A1FB73;
+			remoteInfo = GRichTextDisplayView;
+		};
+		64321E6A22C5BA4600A1FB73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64321E3E22C5BA4400A1FB73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64321E4522C5BA4500A1FB73;
+			remoteInfo = GRichTextDisplayView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64321E4622C5BA4500A1FB73 /* GRichTextDisplayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRichTextDisplayView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64321E4922C5BA4500A1FB73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64321E4A22C5BA4500A1FB73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64321E4C22C5BA4500A1FB73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		64321E4D22C5BA4500A1FB73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64321E5022C5BA4500A1FB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64321E5222C5BA4600A1FB73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64321E5522C5BA4600A1FB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64321E5722C5BA4600A1FB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64321E5822C5BA4600A1FB73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64321E5E22C5BA4600A1FB73 /* GRichTextDisplayViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRichTextDisplayViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64321E6222C5BA4600A1FB73 /* GRichTextDisplayViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRichTextDisplayViewTests.m; sourceTree = "<group>"; };
+		64321E6422C5BA4600A1FB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64321E6922C5BA4600A1FB73 /* GRichTextDisplayViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRichTextDisplayViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64321E6D22C5BA4600A1FB73 /* GRichTextDisplayViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRichTextDisplayViewUITests.m; sourceTree = "<group>"; };
+		64321E6F22C5BA4600A1FB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64321E7C22C5BAA000A1FB73 /* GRichImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichImageView.m; sourceTree = "<group>"; };
+		64321E7D22C5BAA000A1FB73 /* GRichTextAttributedLabelDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedLabelDefines.h; sourceTree = "<group>"; };
+		64321E7E22C5BAA000A1FB73 /* NSMutableAttributedString+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+RichText.h"; sourceTree = "<group>"; };
+		64321E7F22C5BAA000A1FB73 /* GRichTextAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedLabel.h; sourceTree = "<group>"; };
+		64321E8022C5BAA000A1FB73 /* GRichTextAttributedLabelURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedLabelURL.h; sourceTree = "<group>"; };
+		64321E8122C5BAA000A1FB73 /* GRichTextDisplayViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextDisplayViewLayout.h; sourceTree = "<group>"; };
+		64321E8222C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextAttributedLabeItalic.m; sourceTree = "<group>"; };
+		64321E8322C5BAA000A1FB73 /* GRichTextAttributedTextLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedTextLayout.h; sourceTree = "<group>"; };
+		64321E8422C5BAA000A1FB73 /* GRichTextDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextDisplayView.h; sourceTree = "<group>"; };
+		64321E8522C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextAttributedLabelAttachment.m; sourceTree = "<group>"; };
+		64321E8622C5BAA000A1FB73 /* GRichImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichImageView.h; sourceTree = "<group>"; };
+		64321E8722C5BAA000A1FB73 /* GRichTextAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextAttributedLabel.m; sourceTree = "<group>"; };
+		64321E8822C5BAA000A1FB73 /* NSMutableAttributedString+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+RichText.m"; sourceTree = "<group>"; };
+		64321E8A22C5BAA000A1FB73 /* GRichImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichImageItem.m; sourceTree = "<group>"; };
+		64321E8B22C5BAA000A1FB73 /* GRichTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextItem.h; sourceTree = "<group>"; };
+		64321E8C22C5BAA000A1FB73 /* GRichImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichImageItem.h; sourceTree = "<group>"; };
+		64321E8D22C5BAA000A1FB73 /* GRichTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextItem.m; sourceTree = "<group>"; };
+		64321E8E22C5BAA000A1FB73 /* GRichTextDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextDisplayView.m; sourceTree = "<group>"; };
+		64321E8F22C5BAA000A1FB73 /* GRichTextAttributedTextLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextAttributedTextLayout.m; sourceTree = "<group>"; };
+		64321E9022C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedLabeItalic.h; sourceTree = "<group>"; };
+		64321E9122C5BAA000A1FB73 /* GRichTextDisplayViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextDisplayViewLayout.m; sourceTree = "<group>"; };
+		64321E9222C5BAA000A1FB73 /* GRichTextAttributedLabelURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichTextAttributedLabelURL.m; sourceTree = "<group>"; };
+		64321E9322C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichTextAttributedLabelAttachment.h; sourceTree = "<group>"; };
+		64321EA022C5BB3A00A1FB73 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		64321EA122C5BB3A00A1FB73 /* GRichHtmlTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRichHtmlTextParser.m; sourceTree = "<group>"; };
+		64321EA222C5BB3A00A1FB73 /* GRichHtmlTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRichHtmlTextParser.h; sourceTree = "<group>"; };
+		64321EA322C5BB3A00A1FB73 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		64321EA722C5BC6300A1FB73 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		64321EA822C5BC6300A1FB73 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		64321EA922C5BC6300A1FB73 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		64321EAB22C5BC6300A1FB73 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		64321EAC22C5BC6300A1FB73 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		64321EAD22C5BC6300A1FB73 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		64321EB422C5BCA000A1FB73 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		64321EB622C5BCC300A1FB73 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		64321EB822C5BCCD00A1FB73 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		64321EBA22C5BCD400A1FB73 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		64321EBC22C5BCDB00A1FB73 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		64321EBE22C5BCEE00A1FB73 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		64321EC022C5BD5E00A1FB73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64321EC222C5BD6300A1FB73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64321EC422C5BFA300A1FB73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64321EC622C5BFE600A1FB73 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		64321EC822C5C00E00A1FB73 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		64321ECB22C5C41200A1FB73 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		64321ECD22C5DD0F00A1FB73 /* UIImage+GScaleZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GScaleZoom.h"; sourceTree = "<group>"; };
+		64321ECE22C5DD0F00A1FB73 /* UIImage+GScaleZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GScaleZoom.m"; sourceTree = "<group>"; };
+		64321ED022C5DFD100A1FB73 /* UIColor+CGExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CGExtend.h"; sourceTree = "<group>"; };
+		64321ED122C5DFD100A1FB73 /* UIColor+CGExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CGExtend.m"; sourceTree = "<group>"; };
+		64321ED422C5E45F00A1FB73 /* BaseDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDemoViewController.h; sourceTree = "<group>"; };
+		64321ED522C5E45F00A1FB73 /* BaseDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemoViewController.m; sourceTree = "<group>"; };
+		64321ED722C5E47B00A1FB73 /* GSimpleRichTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSimpleRichTextViewController.h; sourceTree = "<group>"; };
+		64321ED822C5E47B00A1FB73 /* GSimpleRichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSimpleRichTextViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64321E4322C5BA4500A1FB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64321EC722C5BFE700A1FB73 /* CoreText.framework in Frameworks */,
+				64321EC522C5BFA300A1FB73 /* CoreGraphics.framework in Frameworks */,
+				64321EC322C5BD6400A1FB73 /* Foundation.framework in Frameworks */,
+				64321EC122C5BD5F00A1FB73 /* UIKit.framework in Frameworks */,
+				64321EBF22C5BCEE00A1FB73 /* libc++.tbd in Frameworks */,
+				64321EBD22C5BCDB00A1FB73 /* libsqlite3.tbd in Frameworks */,
+				64321EBB22C5BCD400A1FB73 /* libz.1.2.5.tbd in Frameworks */,
+				64321EB922C5BCCD00A1FB73 /* libresolv.9.tbd in Frameworks */,
+				64321EB722C5BCC300A1FB73 /* libicucore.tbd in Frameworks */,
+				64321EB522C5BCA000A1FB73 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E5B22C5BA4600A1FB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E6622C5BA4600A1FB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64321E3D22C5BA4400A1FB73 = {
+			isa = PBXGroup;
+			children = (
+				64321E4822C5BA4500A1FB73 /* GRichTextDisplayView */,
+				64321E6122C5BA4600A1FB73 /* GRichTextDisplayViewTests */,
+				64321E6C22C5BA4600A1FB73 /* GRichTextDisplayViewUITests */,
+				64321E4722C5BA4500A1FB73 /* Products */,
+				64321EB322C5BC9F00A1FB73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64321E4722C5BA4500A1FB73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64321E4622C5BA4500A1FB73 /* GRichTextDisplayView.app */,
+				64321E5E22C5BA4600A1FB73 /* GRichTextDisplayViewTests.xctest */,
+				64321E6922C5BA4600A1FB73 /* GRichTextDisplayViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64321E4822C5BA4500A1FB73 /* GRichTextDisplayView */ = {
+			isa = PBXGroup;
+			children = (
+				64321E9F22C5BB3A00A1FB73 /* HTML */,
+				64321E7B22C5BAA000A1FB73 /* ExtendAttributedLabel */,
+				64321ED322C5E37F00A1FB73 /* DemoVC */,
+				64321E4922C5BA4500A1FB73 /* AppDelegate.h */,
+				64321E4A22C5BA4500A1FB73 /* AppDelegate.m */,
+				64321E4C22C5BA4500A1FB73 /* ViewController.h */,
+				64321E4D22C5BA4500A1FB73 /* ViewController.m */,
+				64321E4F22C5BA4500A1FB73 /* Main.storyboard */,
+				64321E5222C5BA4600A1FB73 /* Assets.xcassets */,
+				64321E5422C5BA4600A1FB73 /* LaunchScreen.storyboard */,
+				64321E5722C5BA4600A1FB73 /* Info.plist */,
+				64321E5822C5BA4600A1FB73 /* main.m */,
+				64321ECA22C5C41200A1FB73 /* Supporting Files */,
+			);
+			path = GRichTextDisplayView;
+			sourceTree = "<group>";
+		};
+		64321E6122C5BA4600A1FB73 /* GRichTextDisplayViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				64321E6222C5BA4600A1FB73 /* GRichTextDisplayViewTests.m */,
+				64321E6422C5BA4600A1FB73 /* Info.plist */,
+			);
+			path = GRichTextDisplayViewTests;
+			sourceTree = "<group>";
+		};
+		64321E6C22C5BA4600A1FB73 /* GRichTextDisplayViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64321E6D22C5BA4600A1FB73 /* GRichTextDisplayViewUITests.m */,
+				64321E6F22C5BA4600A1FB73 /* Info.plist */,
+			);
+			path = GRichTextDisplayViewUITests;
+			sourceTree = "<group>";
+		};
+		64321E7B22C5BAA000A1FB73 /* ExtendAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				64321ECC22C5DD0F00A1FB73 /* Utility */,
+				64321E7D22C5BAA000A1FB73 /* GRichTextAttributedLabelDefines.h */,
+				64321E8422C5BAA000A1FB73 /* GRichTextDisplayView.h */,
+				64321E8E22C5BAA000A1FB73 /* GRichTextDisplayView.m */,
+				64321E7F22C5BAA000A1FB73 /* GRichTextAttributedLabel.h */,
+				64321E8722C5BAA000A1FB73 /* GRichTextAttributedLabel.m */,
+				64321E8122C5BAA000A1FB73 /* GRichTextDisplayViewLayout.h */,
+				64321E9122C5BAA000A1FB73 /* GRichTextDisplayViewLayout.m */,
+				64321E8322C5BAA000A1FB73 /* GRichTextAttributedTextLayout.h */,
+				64321E8F22C5BAA000A1FB73 /* GRichTextAttributedTextLayout.m */,
+				64321E7E22C5BAA000A1FB73 /* NSMutableAttributedString+RichText.h */,
+				64321E8822C5BAA000A1FB73 /* NSMutableAttributedString+RichText.m */,
+				64321E8022C5BAA000A1FB73 /* GRichTextAttributedLabelURL.h */,
+				64321E9222C5BAA000A1FB73 /* GRichTextAttributedLabelURL.m */,
+				64321E9022C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.h */,
+				64321E8222C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.m */,
+				64321E9322C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.h */,
+				64321E8522C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.m */,
+				64321E8622C5BAA000A1FB73 /* GRichImageView.h */,
+				64321E7C22C5BAA000A1FB73 /* GRichImageView.m */,
+				64321E8922C5BAA000A1FB73 /* Model */,
+			);
+			path = ExtendAttributedLabel;
+			sourceTree = "<group>";
+		};
+		64321E8922C5BAA000A1FB73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64321E8C22C5BAA000A1FB73 /* GRichImageItem.h */,
+				64321E8A22C5BAA000A1FB73 /* GRichImageItem.m */,
+				64321E8B22C5BAA000A1FB73 /* GRichTextItem.h */,
+				64321E8D22C5BAA000A1FB73 /* GRichTextItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64321E9F22C5BB3A00A1FB73 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				64321EA622C5BC6300A1FB73 /* hpple */,
+				64321EA222C5BB3A00A1FB73 /* GRichHtmlTextParser.h */,
+				64321EA122C5BB3A00A1FB73 /* GRichHtmlTextParser.m */,
+				64321EA322C5BB3A00A1FB73 /* HTMLParser.h */,
+				64321EA022C5BB3A00A1FB73 /* HTMLParser.m */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		64321EA622C5BC6300A1FB73 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				64321EAB22C5BC6300A1FB73 /* TFHpple.h */,
+				64321EA822C5BC6300A1FB73 /* TFHpple.m */,
+				64321EA922C5BC6300A1FB73 /* XPathQuery.h */,
+				64321EAD22C5BC6300A1FB73 /* XPathQuery.m */,
+				64321EA722C5BC6300A1FB73 /* TFHppleElement.h */,
+				64321EAC22C5BC6300A1FB73 /* TFHppleElement.m */,
+			);
+			path = hpple;
+			sourceTree = "<group>";
+		};
+		64321EB322C5BC9F00A1FB73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64321EC822C5C00E00A1FB73 /* libxml2.2.tbd */,
+				64321EC622C5BFE600A1FB73 /* CoreText.framework */,
+				64321EC422C5BFA300A1FB73 /* CoreGraphics.framework */,
+				64321EC222C5BD6300A1FB73 /* Foundation.framework */,
+				64321EC022C5BD5E00A1FB73 /* UIKit.framework */,
+				64321EBE22C5BCEE00A1FB73 /* libc++.tbd */,
+				64321EBC22C5BCDB00A1FB73 /* libsqlite3.tbd */,
+				64321EBA22C5BCD400A1FB73 /* libz.1.2.5.tbd */,
+				64321EB822C5BCCD00A1FB73 /* libresolv.9.tbd */,
+				64321EB622C5BCC300A1FB73 /* libicucore.tbd */,
+				64321EB422C5BCA000A1FB73 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64321ECA22C5C41200A1FB73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64321ECB22C5C41200A1FB73 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64321ECC22C5DD0F00A1FB73 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				64321ECD22C5DD0F00A1FB73 /* UIImage+GScaleZoom.h */,
+				64321ECE22C5DD0F00A1FB73 /* UIImage+GScaleZoom.m */,
+				64321ED022C5DFD100A1FB73 /* UIColor+CGExtend.h */,
+				64321ED122C5DFD100A1FB73 /* UIColor+CGExtend.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		64321ED322C5E37F00A1FB73 /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				64321ED422C5E45F00A1FB73 /* BaseDemoViewController.h */,
+				64321ED522C5E45F00A1FB73 /* BaseDemoViewController.m */,
+				64321ED722C5E47B00A1FB73 /* GSimpleRichTextViewController.h */,
+				64321ED822C5E47B00A1FB73 /* GSimpleRichTextViewController.m */,
+			);
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64321E4522C5BA4500A1FB73 /* GRichTextDisplayView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64321E7222C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayView" */;
+			buildPhases = (
+				64321E4222C5BA4500A1FB73 /* Sources */,
+				64321E4322C5BA4500A1FB73 /* Frameworks */,
+				64321E4422C5BA4500A1FB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRichTextDisplayView;
+			productName = GRichTextDisplayView;
+			productReference = 64321E4622C5BA4500A1FB73 /* GRichTextDisplayView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64321E5D22C5BA4600A1FB73 /* GRichTextDisplayViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64321E7522C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayViewTests" */;
+			buildPhases = (
+				64321E5A22C5BA4600A1FB73 /* Sources */,
+				64321E5B22C5BA4600A1FB73 /* Frameworks */,
+				64321E5C22C5BA4600A1FB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64321E6022C5BA4600A1FB73 /* PBXTargetDependency */,
+			);
+			name = GRichTextDisplayViewTests;
+			productName = GRichTextDisplayViewTests;
+			productReference = 64321E5E22C5BA4600A1FB73 /* GRichTextDisplayViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64321E6822C5BA4600A1FB73 /* GRichTextDisplayViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64321E7822C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayViewUITests" */;
+			buildPhases = (
+				64321E6522C5BA4600A1FB73 /* Sources */,
+				64321E6622C5BA4600A1FB73 /* Frameworks */,
+				64321E6722C5BA4600A1FB73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64321E6B22C5BA4600A1FB73 /* PBXTargetDependency */,
+			);
+			name = GRichTextDisplayViewUITests;
+			productName = GRichTextDisplayViewUITests;
+			productReference = 64321E6922C5BA4600A1FB73 /* GRichTextDisplayViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64321E3E22C5BA4400A1FB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Namegold;
+				TargetAttributes = {
+					64321E4522C5BA4500A1FB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					64321E5D22C5BA4600A1FB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 64321E4522C5BA4500A1FB73;
+					};
+					64321E6822C5BA4600A1FB73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 64321E4522C5BA4500A1FB73;
+					};
+				};
+			};
+			buildConfigurationList = 64321E4122C5BA4400A1FB73 /* Build configuration list for PBXProject "GRichTextDisplayView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64321E3D22C5BA4400A1FB73;
+			productRefGroup = 64321E4722C5BA4500A1FB73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64321E4522C5BA4500A1FB73 /* GRichTextDisplayView */,
+				64321E5D22C5BA4600A1FB73 /* GRichTextDisplayViewTests */,
+				64321E6822C5BA4600A1FB73 /* GRichTextDisplayViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64321E4422C5BA4500A1FB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64321E5622C5BA4600A1FB73 /* LaunchScreen.storyboard in Resources */,
+				64321E5322C5BA4600A1FB73 /* Assets.xcassets in Resources */,
+				64321E5122C5BA4500A1FB73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E5C22C5BA4600A1FB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E6722C5BA4600A1FB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64321E4222C5BA4500A1FB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64321E4E22C5BA4500A1FB73 /* ViewController.m in Sources */,
+				64321E9922C5BAA000A1FB73 /* GRichImageItem.m in Sources */,
+				64321E9722C5BAA000A1FB73 /* GRichTextAttributedLabel.m in Sources */,
+				64321E9C22C5BAA000A1FB73 /* GRichTextAttributedTextLayout.m in Sources */,
+				64321EA522C5BB3A00A1FB73 /* GRichHtmlTextParser.m in Sources */,
+				64321EA422C5BB3A00A1FB73 /* HTMLParser.m in Sources */,
+				64321EB022C5BC6300A1FB73 /* TFHppleElement.m in Sources */,
+				64321ED622C5E45F00A1FB73 /* BaseDemoViewController.m in Sources */,
+				64321ED222C5DFD100A1FB73 /* UIColor+CGExtend.m in Sources */,
+				64321E5922C5BA4600A1FB73 /* main.m in Sources */,
+				64321E9622C5BAA000A1FB73 /* GRichTextAttributedLabelAttachment.m in Sources */,
+				64321E9422C5BAA000A1FB73 /* GRichImageView.m in Sources */,
+				64321ECF22C5DD0F00A1FB73 /* UIImage+GScaleZoom.m in Sources */,
+				64321ED922C5E47B00A1FB73 /* GSimpleRichTextViewController.m in Sources */,
+				64321E9522C5BAA000A1FB73 /* GRichTextAttributedLabeItalic.m in Sources */,
+				64321E9B22C5BAA000A1FB73 /* GRichTextDisplayView.m in Sources */,
+				64321EAF22C5BC6300A1FB73 /* TFHpple.m in Sources */,
+				64321EB122C5BC6300A1FB73 /* XPathQuery.m in Sources */,
+				64321E9D22C5BAA000A1FB73 /* GRichTextDisplayViewLayout.m in Sources */,
+				64321E9A22C5BAA000A1FB73 /* GRichTextItem.m in Sources */,
+				64321E4B22C5BA4500A1FB73 /* AppDelegate.m in Sources */,
+				64321E9822C5BAA000A1FB73 /* NSMutableAttributedString+RichText.m in Sources */,
+				64321E9E22C5BAA000A1FB73 /* GRichTextAttributedLabelURL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E5A22C5BA4600A1FB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64321E6322C5BA4600A1FB73 /* GRichTextDisplayViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64321E6522C5BA4600A1FB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64321E6E22C5BA4600A1FB73 /* GRichTextDisplayViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64321E6022C5BA4600A1FB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64321E4522C5BA4500A1FB73 /* GRichTextDisplayView */;
+			targetProxy = 64321E5F22C5BA4600A1FB73 /* PBXContainerItemProxy */;
+		};
+		64321E6B22C5BA4600A1FB73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64321E4522C5BA4500A1FB73 /* GRichTextDisplayView */;
+			targetProxy = 64321E6A22C5BA4600A1FB73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64321E4F22C5BA4500A1FB73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64321E5022C5BA4500A1FB73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64321E5422C5BA4600A1FB73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64321E5522C5BA4600A1FB73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64321E7022C5BA4600A1FB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64321E7122C5BA4600A1FB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64321E7322C5BA4600A1FB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				GCC_PREFIX_HEADER = "GRichTextDisplayView/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = GRichTextDisplayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64321E7422C5BA4600A1FB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				GCC_PREFIX_HEADER = "GRichTextDisplayView/Supporting Files/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = GRichTextDisplayView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64321E7622C5BA4600A1FB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GRichTextDisplayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GRichTextDisplayView.app/GRichTextDisplayView";
+			};
+			name = Debug;
+		};
+		64321E7722C5BA4600A1FB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GRichTextDisplayViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GRichTextDisplayView.app/GRichTextDisplayView";
+			};
+			name = Release;
+		};
+		64321E7922C5BA4600A1FB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GRichTextDisplayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GRichTextDisplayView;
+			};
+			name = Debug;
+		};
+		64321E7A22C5BA4600A1FB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49FUNDNGC6;
+				INFOPLIST_FILE = GRichTextDisplayViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wallstreetcn.tinker.GRichTextDisplayViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GRichTextDisplayView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64321E4122C5BA4400A1FB73 /* Build configuration list for PBXProject "GRichTextDisplayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64321E7022C5BA4600A1FB73 /* Debug */,
+				64321E7122C5BA4600A1FB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64321E7222C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64321E7322C5BA4600A1FB73 /* Debug */,
+				64321E7422C5BA4600A1FB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64321E7522C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64321E7622C5BA4600A1FB73 /* Debug */,
+				64321E7722C5BA4600A1FB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64321E7822C5BA4600A1FB73 /* Build configuration list for PBXNativeTarget "GRichTextDisplayViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64321E7922C5BA4600A1FB73 /* Debug */,
+				64321E7A22C5BA4600A1FB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64321E3E22C5BA4400A1FB73 /* Project object */;
+}
