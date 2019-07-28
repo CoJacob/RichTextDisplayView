@@ -79,6 +79,7 @@
                                             font: (UIFont *)font
                               retractNumberOfLine: (NSInteger )retractLine {
     GRichTextAttributedLabel *attributedLabel = [[GRichTextAttributedLabel alloc] initWithFrame:CGRectMake(0, 0, width, 0.1f)];
+    attributedLabel.font                      = font;
     attributedLabel.lineSpacing               = 8.f;
     attributedLabel.numberOfLines             = retractLine;    
     if (component.contentArray.count > 0) {

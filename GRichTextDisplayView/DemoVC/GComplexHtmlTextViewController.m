@@ -25,6 +25,7 @@
     self.title = @"富文本(支持展开收起、屏幕旋转)";
     [self.scrollView addSubview:self.richTextDisplayView];
     [self.scrollView addSubview:self.shinkButton];
+    self.richTextAttributedLabel.font = [UIFont systemFontOfSize:13.f];
     {
         self.richTextDisplayView.retractNumberOfLine = 5;
         self.richTextDisplayView.isRetractStatus = YES;
@@ -83,7 +84,7 @@
     self.htmlText = @"<p>Developer计划 Apple Developer Program  注册探索macOSiOSwatchOStvOSSafari 和 Web (英文)游戏开发 (英文)企业 (英文)教育 (英文)WWDC (英文)设计Human Interface Guidelines (英文)资源 (英文)视频 (英文)Apple 设计大奖 (英文)字体 (英文)辅助功能App 国际化配件设计开发XcodeSwiftSwift PlaygroundsTestFlight文档 (英文) 简体中文文档 视频 (英文) 下载 (英文) 分发 开发者帐户 App Store App Review Mac 软件 商务 App (英文) Safari 扩展 (英文) 营销资源 商标使用许可 (英文) 支持 文档 开发者论坛 (英文) 反馈 & 错误报告 (英文) 系统状态 (英文) 联系我们 帐户 (英文) 证书、标识符和描述文件 (英文) App Store Connect\n实物简介:</p><p><img class=\"wscnph\" src=\"https://wpimg.wallstcn.com/c2c10c66-b462-451e-8f1c-7df1a06b12cb.jpg\" data-wscntype=\"image\" data-wscnh=\"3646\" data-wscnw=\"1080\" /><img class=\"wscnph\" src=\"https://wpimg.wallstcn.com/bf918472-500e-4013-8c52-d6b63021540a.jpg\" data-wscntype=\"image\" data-wscnh=\"600\" data-wscnw=\"1080\" data-mce-src=\"https://wpimg.wallstcn.com/bf918472-500e-4013-8c52-d6b63021540a.jpg\"/></p>";
     self.foldTextHeight = [GRichTextDisplayViewLayout heightForDrawHtmlText:self.htmlText
                                                                     viewWidth:CGRectGetWidth(self.richTextDisplayView.frame)
-                                                                         font:[UIFont systemFontOfSize:15.f]
+                                                                         font:[UIFont systemFontOfSize:13.f]
                                                           retractNumberOfLine:5];
 }
 
